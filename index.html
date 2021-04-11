@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tic Tac Toe</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+
+body {
+    font-family: "Arial", sans-serif;
+}
+section {
+    text-align: center;
+}
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 50px auto;
+}
+.cell {
+    font-family: "Permanent Marker", cursive;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+        </style>
+
+    </head>
+    <body>
+        
+        <section>
+            <h1 class="game--title">Tic Tac Toe</h1>
+            <div class="game--container">
+                <div data-cell-index="0" class="cell" id="c1" onclick="fillSlot(this.id)"></div>
+                <div data-cell-index="1" class="cell" id="c2" onclick="fillSlot(this.id)"></div>
+                <div data-cell-index="2" class="cell" id="c3" onclick="fillSlot(this.id)"></div>
+                <div data-cell-index="3" class="cell" id="c4" onclick="fillSlot(this.id)"></div>
+                <div data-cell-index="4" class="cell" id="c5" onclick="fillSlot(this.id)"></div>
+                <div data-cell-index="5" class="cell" id="c6" onclick="fillSlot(this.id)"></div>
+                <div data-cell-index="6" class="cell" id="c7" onclick="fillSlot(this.id)"></div>
+                <div data-cell-index="7" class="cell" id="c8" onclick="fillSlot(this.id)"></div>
+                <div data-cell-index="8" class="cell" id="c9" onclick="fillSlot(this.id)"></div>
+            </div>
+            <h2 class="game--status"></h2>
+            <button id="reset" onClick="window.location.reload()">Restart Game</button>
+        </section>
+
+        <script src="app.js" async defer></script>
+    </body>
+</html>
+
+<!-- <div data-cell-index="0" class="cell" id="c1" onclick="fillSlot(this.id)">c1</div>
+<div data-cell-index="1" class="cell" id="c2" onclick="fillSlot(this.id)">c2</div>
+<div data-cell-index="2" class="cell" id="c3" onclick="fillSlot(this.id)">c3</div>
+<div data-cell-index="3" class="cell" id="c4" onclick="fillSlot(this.id)">c4</div>
+<div data-cell-index="4" class="cell" id="c5" onclick="fillSlot(this.id)">c5</div>
+<div data-cell-index="5" class="cell" id="c6" onclick="fillSlot(this.id)">c6</div>
+<div data-cell-index="6" class="cell" id="c7" onclick="fillSlot(this.id)">c7</div>
+<div data-cell-index="7" class="cell" id="c8" onclick="fillSlot(this.id)">c8</div>
+<div data-cell-index="8" class="cell" id="c9" onclick="fillSlot(this.id)">c9</div> -->
